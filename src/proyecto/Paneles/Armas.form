@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="944" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="310" max="-2" attributes="0"/>
+              <EmptySpace pref="158" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="a7" green="de" red="cf" type="rgb"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JList" name="listCompradores">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="a7" green="de" red="cf" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Rockwell" size="12" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+              <StringArray count="41">
+                <StringItem index="0" value="Marisol M. : 2x Granadas"/>
+                <StringItem index="1" value="Marisol M. : 1x Municion ligera"/>
+                <StringItem index="2" value="----------------------------------------------------------"/>
+                <StringItem index="3" value="Gabriel Cars : 5x Cuchillas"/>
+                <StringItem index="4" value="----------------------------------------------------------"/>
+                <StringItem index="5" value="Max Petherson : 1x Pistola"/>
+                <StringItem index="6" value="Max Petherson : 2x Cartuchos vacios"/>
+                <StringItem index="7" value="----------------------------------------------------------"/>
+                <StringItem index="8" value="Angel R. : 3x Paquetes G."/>
+                <StringItem index="9" value="Angel R. : 4x Polvora A."/>
+                <StringItem index="10" value="----------------------------------------------------------"/>
+                <StringItem index="11" value="Richar Macton : 8x Polvora A."/>
+                <StringItem index="12" value="Richar Macton : 1x Pistola Fugas"/>
+                <StringItem index="13" value="----------------------------------------------------------"/>
+                <StringItem index="14" value="Ruth Rabioli : 3x Baterias BB"/>
+                <StringItem index="15" value="----------------------------------------------------------"/>
+                <StringItem index="16" value="Cristian Cars : 1x Pistola"/>
+                <StringItem index="17" value="Cristian Cars : 3x Polvora A."/>
+                <StringItem index="18" value="----------------------------------------------------------"/>
+                <StringItem index="19" value="Desconocido : 4x Paquetes G."/>
+                <StringItem index="20" value="Desconocido : 12x Polvora G."/>
+                <StringItem index="21" value="Desconocido : 4x Baterias BBB"/>
+                <StringItem index="22" value="----------------------------------------------------------"/>
+                <StringItem index="23" value="Peter Rod : 7x Baterias BB"/>
+                <StringItem index="24" value="----------------------------------------------------------"/>
+                <StringItem index="25" value="Max Petherson : 2x Municion ligera"/>
+                <StringItem index="26" value="----------------------------------------------------------"/>
+                <StringItem index="27" value="Marian R. : 2x Escopeta Fugas"/>
+                <StringItem index="28" value="Marian R. : 1x Cartucho Vigas."/>
+                <StringItem index="29" value="----------------------------------------------------------"/>
+                <StringItem index="30" value="Richar Macton : 1x Mejora Pulso"/>
+                <StringItem index="31" value="----------------------------------------------------------"/>
+                <StringItem index="32" value="Marcos M. : 3x Liquido Arquino"/>
+                <StringItem index="33" value="Marcos M. : 2x Baterias B"/>
+                <StringItem index="34" value="----------------------------------------------------------"/>
+                <StringItem index="35" value="Johan R. : 1x Liquido Arquino"/>
+                <StringItem index="36" value="----------------------------------------------------------"/>
+                <StringItem index="37" value="Gorion Hanibal : 2x Mejora Ocular"/>
+                <StringItem index="38" value="Gorion Hanibal : 1x Paquete Update"/>
+                <StringItem index="39" value="----------------------------------------------------------"/>
+                <StringItem index="40" value="Feliz Tither : 1x Pistola Fugas"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

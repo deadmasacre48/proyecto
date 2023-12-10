@@ -3,11 +3,13 @@ package Setting;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
 import proyecto.*;
-import proyecto.Paneles.Villa;
+import proyecto.Paneles.*;
 
-public class Controlador implements ActionListener{
+public class Controlador implements ActionListener, MouseListener{
     //Vista Principal de JFrames
     private Menu menuview = new Menu();
     private Niveles nivelesview = new Niveles();
@@ -18,6 +20,13 @@ public class Controlador implements ActionListener{
     
     //Paneles que se usan
     private Villa villa = new Villa();
+    private Armas arma = new Armas();
+    private Bar2Copas bar = new Bar2Copas();
+    private Ropa ropa = new Ropa();
+    private Joyas joyas = new Joyas();
+    private Papeleria papeles = new Papeleria();
+    private Ricashio ricashio = new Ricashio();
+    private Martines martine = new Martines();
     
     public Controlador(Menu menuview, Niveles nivelesview, Mision01 mision1){
         //Inicializacion de objetos principales
@@ -36,9 +45,19 @@ public class Controlador implements ActionListener{
         this.nivelesview.btnMision02.addActionListener(this);
         this.nivelesview.btnMision03.addActionListener(this);
         
-        //
+        //Acciones de mision 1
         this.mision1.btnMenu.addActionListener(this);
         
+        
+        
+        
+        
+        //Acciones dentro de el panel villa
+        this.villa.lbArmas.addMouseListener(this);
+        this.villa.lbBar.addMouseListener(this);
+        this.villa.lbMartines.addMouseListener(this);
+        this.villa.lbRicashio.addMouseListener(this);
+        this.villa.lbTienda.addMouseListener(this);
         
     }
     
@@ -96,13 +115,50 @@ public class Controlador implements ActionListener{
         
         //Accion de abrir el menu dentro de la mision 1
         if(e.getSource() == mision1.btnMenu){
-            me.setVilla(mision1.panelMision, villa);
+            me.setPanelDeLugar(mision1.panelMision, villa);
         }
-        //Accion de abrir el 
         
         
         
         
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        //Accion de ir a panel armas
+        if(e.getSource() == villa.lbArmas){
+            me.setPanelDeLugar(mision1.panelMision, arma);
+        }
+        //Accion de ir a panel Martines
+        if(e.getSource() == villa.lbMartines){
+            me.setPanelDeLugar(mision1.panelMision, martine);
+        }
+        //Accion de ir a panel Bar2Copas
+        if(e.getSource() == villa.lbBar){
+            me.setPanelDeLugar(mision1.panelMision, bar);
+        }
+        //Accion de ir a panel Ricashio
+        if(e.getSource() == villa.lbRicashio){
+            me.setPanelDeLugar(mision1.panelMision, ricashio);
+        }
+        //Accion de ir a panel Ropa
+        if(e.getSource() == villa.lbTienda){
+            me.setPanelDeLugar(mision1.panelMision, ropa);
+        }
+        
+        
+    }
+    @Override
+    public void mousePressed(MouseEvent e) {
+    }
+    @Override
+    public void mouseReleased(MouseEvent e) {
+    }
+    @Override
+    public void mouseEntered(MouseEvent e) {
+    }
+    @Override
+    public void mouseExited(MouseEvent e) {
     }
     
 }

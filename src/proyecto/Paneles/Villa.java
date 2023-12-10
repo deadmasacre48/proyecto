@@ -20,7 +20,7 @@ public class Villa extends javax.swing.JPanel {
             setOpaque(false);
             super.paintComponent(grafico);
         }
-    }   
+    }
     
     public Villa() {
         initComponents();
@@ -106,6 +106,7 @@ public class Villa extends javax.swing.JPanel {
         });
 
         lbTienda.setFont(new java.awt.Font("Rockwell", 1, 24)); // NOI18N
+        lbTienda.setForeground(new java.awt.Color(255, 255, 255));
         lbTienda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbTienda.setText("Tienda Central");
         lbTienda.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -215,6 +216,6 @@ public class Villa extends javax.swing.JPanel {
     private javax.swing.JLabel lbCar;
     public javax.swing.JLabel lbMartines;
     public javax.swing.JLabel lbRicashio;
-    private javax.swing.JLabel lbTienda;
+    public javax.swing.JLabel lbTienda;
     // End of variables declaration//GEN-END:variables
 }
