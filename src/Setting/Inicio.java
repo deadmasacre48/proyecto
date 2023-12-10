@@ -12,7 +12,8 @@ public class Inicio {
         UIManager.setLookAndFeel(new HiFiLookAndFeel());
         Menu m = new Menu();
         Niveles n = new Niveles();
-        Controlador c = new Controlador(m,n);
+        Mision01 m1 = new Mision01();
+        Controlador c = new Controlador(m,n,m1);
         m.setVisible(true);
         
     }
