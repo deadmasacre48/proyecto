@@ -1,11 +1,7 @@
 
 package proyecto;
 
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 public class Mision01 extends javax.swing.JFrame {
-    Image img = new ImageIcon(getClass().getResource("/Imagenes/vesindadM.png")).getImage();
     
     public Mision01() {
         initComponents();
