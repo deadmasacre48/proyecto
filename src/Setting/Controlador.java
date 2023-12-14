@@ -17,6 +17,7 @@ public class Controlador implements ActionListener, MouseListener{
     
     //Metodos que se usan
     private MetodosEscenas me = new MetodosEscenas();
+    private MetodoTiempo mt = new MetodoTiempo();
     
     //Paneles que se usan
     private Villa villa = new Villa();
@@ -27,6 +28,7 @@ public class Controlador implements ActionListener, MouseListener{
     private Papeleria papeles = new Papeleria();
     private Ricashio ricashio = new Ricashio();
     private Martines martine = new Martines();
+    private Crimen01 crimen01 = new Crimen01();
     
     public Controlador(Menu menuview, Niveles nivelesview, Mision01 mision1){
         //Inicializacion de objetos principales
@@ -47,10 +49,12 @@ public class Controlador implements ActionListener, MouseListener{
         
         //Acciones de mision 1
         this.mision1.btnMenu.addActionListener(this);
-        
-        
-        
-        
+        this.mision1.btnAtentado.addActionListener(this);
+        this.mision1.btnHomicidio.addActionListener(this);
+        this.mision1.btnSuicidio.addActionListener(this);
+        this.mision1.btnInfo.addActionListener(this);
+        this.mision1.btnPista.addActionListener(this);
+        this.mision1.btnSalir.addActionListener(this);
         
         //Acciones dentro de el panel villa
         this.villa.lbArmas.addMouseListener(this);
@@ -60,6 +64,9 @@ public class Controlador implements ActionListener, MouseListener{
         this.villa.lbTienda.addMouseListener(this);
         
     }
+    
+    
+    
     
     
     @Override
@@ -96,16 +103,18 @@ public class Controlador implements ActionListener, MouseListener{
         //Accion de ir a la mision 1
         if(e.getSource() == nivelesview.btnMision01){
             mision1.setVisible(true);
+            mt.Tiempo10Min(mision1.lbTiempo);
+            me.setPanelDeLugar(mision1.panelMision, crimen01);
             nivelesview.dispose();
         }
         //Accion de ir a la mision 2
         if(e.getSource() == nivelesview.btnMision02){
-            
+            System.out.println("Mision en progreso");
             nivelesview.dispose();
         }
         //Accion de ir a la mision 3
         if(e.getSource() == nivelesview.btnMision03){
-            
+            System.out.println("Mision en progreso");
             nivelesview.dispose();
         }
         
@@ -115,11 +124,43 @@ public class Controlador implements ActionListener, MouseListener{
         
         //Accion de abrir el menu dentro de la mision 1
         if(e.getSource() == mision1.btnMenu){
-            me.setPanelDeLugar(mision1.panelMision, villa);
+            mision1.menu.show(mision1.btnMenu,-200,-200);
         }
-        
-        
-        
+        //Accion de informacion de la mision actual
+        if(e.getSource() == mision1.btnInfo){
+            JOptionPane.showMessageDialog(mision1, "Este cadaber quedo rostisado, olor mugriento y sangre dispersada,\n"
+                                                            + "nadie pudo reconocerde esto y mas importante, saber que paso aqui\n"
+                                                            + " y para ello estoy aqui, para provarme, no tienen fe pero se que\n"
+                                                            + "soy capas de hacerlo.",
+                    "Informacion de mision", JOptionPane.INFORMATION_MESSAGE);
+        }
+        //Accion de Obtener una pista de la escena
+        if(e.getSource() == mision1.btnPista){
+            
+        }
+        //Accion de Salir de la mision
+        if(e.getSource() == mision1.btnSalir){
+            int i = JOptionPane.showConfirmDialog(mision1, "Perderas el progreso obtenido en esta mision hasta ahora.\nEstas seguro?",
+                    "Salir",JOptionPane.YES_NO_OPTION,JOptionPane.INFORMATION_MESSAGE);
+            if(i == 0){
+                nivelesview.setVisible(true);
+                mision1.dispose();
+            }else{
+                
+            }
+        }
+        //Accion de Culpar a alguien y dar este caso como atentado
+        if(e.getSource() == mision1.btnAtentado){
+            
+        }
+        //Accion de Culpar a alguien y dar este caso como homicidio
+        if(e.getSource() == mision1.btnHomicidio){
+            
+        }
+        //Accion de dar este caso como suicidio
+        if(e.getSource() == mision1.btnSuicidio){
+            
+        }
         
     }
 

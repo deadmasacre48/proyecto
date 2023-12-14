@@ -9,7 +9,6 @@ public class Niveles extends javax.swing.JFrame {
     public Niveles() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.setExtendedState(this.MAXIMIZED_BOTH);
         Image icon = new ImageIcon(getClass().getResource("/Imagenes/logo.png")).getImage();
         this.setIconImage(icon);
     }
