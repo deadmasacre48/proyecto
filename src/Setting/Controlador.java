@@ -29,6 +29,7 @@ public class Controlador implements ActionListener, MouseListener{
     private Ricashio ricashio = new Ricashio();
     private Martines martine = new Martines();
     private Crimen01 crimen01 = new Crimen01();
+    private Policia policia = new Policia();
     
     public Controlador(Menu menuview, Niveles nivelesview, Mision01 mision1){
         //Inicializacion de objetos principales
@@ -151,15 +152,15 @@ public class Controlador implements ActionListener, MouseListener{
         }
         //Accion de Culpar a alguien y dar este caso como atentado
         if(e.getSource() == mision1.btnAtentado){
-            
+            me.setPanelDeLugar(mision1.panelMision, policia);
         }
         //Accion de Culpar a alguien y dar este caso como homicidio
         if(e.getSource() == mision1.btnHomicidio){
-            
+            me.setPanelDeLugar(mision1.panelMision, policia);
         }
         //Accion de dar este caso como suicidio
         if(e.getSource() == mision1.btnSuicidio){
-            
+            me.setPanelDeLugar(mision1.panelMision, policia);
         }
         
     }

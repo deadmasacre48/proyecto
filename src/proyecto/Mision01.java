@@ -1,12 +1,17 @@
 
 package proyecto;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 public class Mision01 extends javax.swing.JFrame {
     
     public Mision01() {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setExtendedState(this.MAXIMIZED_BOTH);
+        Image icon = new ImageIcon(getClass().getResource("/Imagenes/logo.png")).getImage();
+        this.setIconImage(icon);
         menu.add(panelmenu);
     }
     

@@ -10,7 +10,7 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.setExtendedState(this.MAXIMIZED_BOTH);
+        //this.setExtendedState(this.MAXIMIZED_BOTH);
         Image icon = new ImageIcon(getClass().getResource("/Imagenes/logo.png")).getImage();
         this.setIconImage(icon);
         lvFondo.setIcon(new ImageIcon(icon.getScaledInstance(lvFondo.getWidth(), lvFondo.getHeight(), Image.SCALE_SMOOTH)));
